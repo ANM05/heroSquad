@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2deaceba-2834-4d73-be39-fb98915fee92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroSquad/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/heroSquad/HeroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heroSquad/Squad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/heroSquad/SquadTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/heroSquad/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroSquad/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroSquad/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/heroSquad/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heroSquad/HeroTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -73,9 +74,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/heroSquad/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="610">
+              <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#295#301#0" expanded="true" />
                 <element signature="e#177#178#0" expanded="true" />
                 <element signature="e#208#209#0" expanded="true" />
                 <element signature="e#302#303#0" expanded="true" />
@@ -86,16 +89,45 @@
                 <element signature="e#696#697#0" expanded="true" />
                 <element signature="e#730#731#0" expanded="true" />
                 <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#985#986#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/heroSquad/HeroTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            <state relative-caret-position="765">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/heroSquad/Squad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/heroSquad/SquadTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +158,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
         <option value="$PROJECT_DIR$/src/test/java/heroSquad/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/heroSquad/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/heroSquad/Hero.java" />
         <option value="$PROJECT_DIR$/src/test/java/heroSquad/HeroTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heroSquad/Hero.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heroSquad/Squad.java" />
+        <option value="$PROJECT_DIR$/src/test/java/heroSquad/SquadTest.java" />
       </list>
     </option>
   </component>
@@ -136,6 +170,9 @@
     <option name="y" value="47" />
     <option name="width" value="1400" />
     <option name="height" value="782" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -320,9 +357,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/heroSquad/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="610">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#301#0" expanded="true" />
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#208#209#0" expanded="true" />
             <element signature="e#302#303#0" expanded="true" />
@@ -333,14 +372,39 @@
             <element signature="e#696#697#0" expanded="true" />
             <element signature="e#730#731#0" expanded="true" />
             <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/heroSquad/HeroTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        <state relative-caret-position="765">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heroSquad/Squad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/heroSquad/SquadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -34,4 +34,31 @@
          Hero testHero = new Hero("Atom", 25, "Atomic power", "Shadow control","Affected by darkness");
          assertEquals("Affected by darkness", testHero.getWeakness());
      }
+     @Test
+     public void getAll_returnAllinstancesOfHeroObject_true(){
+       Hero heroOne = new Hero ("Atom", 25, "Atomic power", "Shadow control","Affected by darkness");
+       Hero heroTwo = new Hero ("Intelli", 25, "Intelligence", "Mind control","Sturborn");
+       Hero heroThree = new Hero ("Lizard", 25, "Wall climb", "Super senses","Cold blooded");
+       assertEquals(true,Hero.getAll().contains(heroOne));
+       assertEquals(true,Hero.getAll().contains(heroTwo));
+       assertEquals(true,Hero.getAll().contains(heroThree));
+     }
+     @Test
+     public void clear_emptiesAllHeroesFromHeroInsatancesArray_0(){
+       Hero testHero = new Hero("Atom", 25, "Atomic power", "Shadow control","Affected by darkness");
+       Hero.clear();
+       assertEquals(Hero.getAll().size(), 0);
+     }
+    @Test
+     public void getId_heroInstantiatesWithAnId_1(){
+       Hero.clear();
+       Hero testHero = new Hero("Atom", 25, "Atomic power", "Shadow control","Affected by darkness");
+       assertEquals(1,testHero.getId());
+    }
+     @Test
+     public void find_returnsHeroWithSameId_heroTwo(){
+         Hero heroOne = new Hero ("Atom", 25, "Atomic power", "Shadow control","Affected by darkness");
+         Hero heroTwo = new Hero ("Intelli", 25, "Intelligence", "Mind control","Sturborn");
+         assertEquals(Hero.find(heroTwo.getId()),heroTwo);
+     }
 }

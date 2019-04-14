@@ -1,4 +1,6 @@
 package heroSquad;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Hero{
 
@@ -7,6 +9,8 @@ public class Hero{
     private String mSpecialPower;
     private String mStrength;
     private String mWeakness;
+    private static List<Hero> heroInstances = new ArrayList<Hero>();
+    private int mId;
 
     public Hero(String heroName, int heroAge, String specialPower, String strength, String weakness){
     mHeroName = heroName;
@@ -14,6 +18,8 @@ public class Hero{
     mSpecialPower = specialPower;
     mStrength = strength;
     mWeakness = weakness;
+    heroInstances.add(this);
+    mId = heroInstances.size();
     }
 
     public String getHeroName(){
@@ -30,5 +36,17 @@ public class Hero{
     }
     public String getWeakness(){
         return mWeakness;
+    }
+    public static List<Hero> getAll(){
+        return heroInstances;
+    }
+    public static void clear(){
+        heroInstances.clear();
+    }
+    public int getId(){
+        return mId;
+    }
+    public static Hero find(int id){
+        return heroInstances.get(id-1);
     }
 }
