@@ -9,5 +9,5 @@ public class SquadTest{
     Squad testSquad = new Squad("",0,"");
     assertEquals(true, testSquad instanceof Squad);
     }
-    
+
 }
