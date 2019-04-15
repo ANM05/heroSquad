@@ -2,11 +2,13 @@
         #if ($heroes)
 <ul>
 #foreach ($hero in $heroes)
-<li>$hero.getHeroName()</li>
-<li>$hero.getSpecialPower()</li>
+<li>Name: $hero.getHeroName()</li>
+<li>Special power: $hero.getSpecialPower()</li>
+<br>
+<hr>
 #end
 </ul>
         #else
 <h3>No Heroes yet!</h3>
         #end
-<button><a href="/heroes/new">Add New Task</a><button>
+<button class="btn-lg"><a href="/heroes/new">Add a new Hero</a></button>
