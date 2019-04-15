@@ -7,12 +7,14 @@ public class Squad{
     private int mSize;
     private String mCause;
     private static List<Squad> mSquads = new ArrayList<Squad>();
+    private int mId;
 
     public Squad(String squadName, int maxSize, String cause){
      mName = squadName;
      mSize = maxSize;
      mCause = cause;
      mSquads.add(this);
+     mId = mSquads.size();
     }
     public String getName(){
         return mName;
@@ -25,5 +27,11 @@ public class Squad{
     }
     public static List<Squad> squadAll(){
         return mSquads;
+    }
+    public static void clearAll(){
+        mSquads.clear();
+    }
+    public int getId(){
+        return mId;
     }
 }

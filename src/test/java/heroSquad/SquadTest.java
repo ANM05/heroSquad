@@ -31,4 +31,15 @@ public class SquadTest{
         assertEquals(true, Squad.squadAll().contains(squadOne));
         assertEquals(true, Squad.squadAll().contains(squadTwo));
     }
+    @Test
+    public void clearAll_emptiesAllSquadsFromSquadObject_0(){
+        Squad testSquad = new Squad("mortal",2,"Justice");
+        Squad.clearAll();
+        assertEquals(Squad.squadAll().size(),0);
+    }
+    @Test
+    public void getId_squadObjectsIntantiatesWithAnId_1(){
+        Squad testSquad = new Squad("mortal",2,"Justice");
+        assertEquals(1, testSquad.getId());
+    }
 }
