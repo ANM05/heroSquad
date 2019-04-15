@@ -42,4 +42,17 @@ public class SquadTest{
         Squad testSquad = new Squad("mortal",2,"Justice");
         assertEquals(1, testSquad.getId());
     }
+    @Test
+    public void getHeroes_initiallyReturnsEmptyListOfHeroes_ArrayList(){
+        Squad.clearAll();
+        Squad testSquad = new Squad("mortal",2,"Justice");
+        assertEquals(0, testSquad.getHeroes().size());
+    }
+    @Test
+    public void addHero_addHeroToaList_true(){
+    Squad testSquad = new Squad("mortal",2,"Justice");
+    Hero testHero = new Hero("Atom", 25, "Atomic power", "Shadow control","Affected by darkness");
+    testSquad.addHero(testHero);
+    assertTrue(testSquad.getHeroes().contains(testHero));
+    }
 }

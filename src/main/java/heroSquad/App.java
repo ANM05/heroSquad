@@ -43,5 +43,11 @@ public class App {
             model.put("template", "templates/success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
+        //Squad routes
+        get("/squad/new",(request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "templates/squadform.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
 }
