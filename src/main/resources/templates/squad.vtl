@@ -1,0 +1,10 @@
+<h1>All Squads</h1>
+<ul>
+#foreach ($squad in $squads)
+<li>Name: <a>$squad.getName()</a></li>
+<li>Max-Size: <a>$squad.getSize()</a></li>
+<li>Cause: <a>$squad.getCause()</a></li>
+<hr>
+#end
+</ul>
+<a href="/squad/new">Add New Category</a>
