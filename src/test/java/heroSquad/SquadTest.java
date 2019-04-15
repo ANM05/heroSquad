@@ -43,6 +43,13 @@ public class SquadTest{
         assertEquals(1, testSquad.getId());
     }
     @Test
+    public void find_returnsSquadWithParticularId_squadTwo(){
+        Squad.clearAll();
+        Squad squadOne = new Squad("mortal",2,"Justice");
+        Squad squadTwo = new Squad("dance",4,"fun");
+        assertEquals(Squad.find(squadTwo.getId()), squadTwo);
+    }
+    @Test
     public void getHeroes_initiallyReturnsEmptyListOfHeroes_ArrayList(){
         Squad.clearAll();
         Squad testSquad = new Squad("mortal",2,"Justice");

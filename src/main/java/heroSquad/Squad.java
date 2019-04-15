@@ -42,4 +42,7 @@ public class Squad{
     public void addHero(Hero heroes){
         mHero.add(heroes);
     }
+    public static Squad find(int id){
+        return mSquads.get(id-1);
+    }
 }
