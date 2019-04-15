@@ -1,10 +1,11 @@
 <h1>All Squads</h1>
 <ul>
 #foreach ($squad in $squads)
-<li>Name: <a href="/squads/$squad.getId()"><button class="btn">$squad.getName()</button></a></li>
+<li>Squad Name: <a href="/squads/$squad.getId()"><button class="btn">$squad.getName()</button></a></li>
 <li>Max-Size: <a href="/squads/$squad.getId()"><button class="btn">$squad.getSize()</button></a></li>
 <li>Cause: <a href="/squads/$squad.getId()"><button class="btn">$squad.getCause()</button></a></li>
 <hr>
 #end
 </ul>
 <a href="/squad/new"><button class="btn-lg">Add New Squad</button></a>
+<a href="/"><button class="btn-lg">Home</button></a>
