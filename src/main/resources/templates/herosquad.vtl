@@ -1,0 +1,12 @@
+<h1>Heroes and Squads</h1>
+<ul>
+    #foreach ($hero in $squad.getHeroes())
+    <li>Hero Name: <button class="btn">$hero.getHeroName()</button></li>
+    <li>Special Powers: <button class="btn">$hero.getSpecialPower()</button></li>
+    <li>Hero age: <button class="btn">$hero.getHeroAge()</button></li>
+    <li>Hero Weakness: <button class="btn">$hero.getWeakness()</button></li>
+    <hr>
+    #end
+</ul>
+<a href="/squad/new"><button class="btn-lg">Add New Squad</button></a>
+<a href="/"><button class="btn-lg">Home</button></a>

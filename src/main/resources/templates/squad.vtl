@@ -1,9 +1,9 @@
-<h1>All Squads</h1>
+<h1>All Squads added:</h1>
 <ul>
 #foreach ($squad in $squads)
-<li>Squad Name: <a href="/squads/$squad.getId()"><button class="btn">$squad.getName()</button></a></li>
-<li>Max-Size: <a href="/squads/$squad.getId()"><button class="btn">$squad.getSize()</button></a></li>
-<li>Cause: <a href="/squads/$squad.getId()"><button class="btn">$squad.getCause()</button></a></li>
+<li>Hero Name: <a href="/squads/$squad.getId()"><button class="btn">$squad.getName()</button></a></li>
+<li>Special Powers: <a href="/squads/$squad.getId()"><button class="btn">$squad.getSize()</button></a></li>
+<li>Hero age: <a href="/squads/$squad.getId()"><button class="btn">$squad.getCause()</button></a></li>
 <hr>
 #end
 </ul>
