@@ -72,14 +72,15 @@ public class App {
             model.put("template", "templates/squadDetails.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-        get("/squad/:id/heroes/new", (request, response) -> {
+        get("squad/:id/heroes/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
             model.put("squads", squad);
             model.put("template", "templates/squad-hero-form.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-        
+
+
         ProcessBuilder process = new ProcessBuilder();
         Integer port;
         if (process.environment().get("PORT") != null) {

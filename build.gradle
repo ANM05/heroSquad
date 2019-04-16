@@ -37,4 +37,4 @@ mainClassName = 'heroSquad.App'
 applicationName = "hero-squad"
 
 defaultTasks = ['clean']
-task stage(dependsOn: ['clean', 'installApp'])
+task stage(dependsOn: ['clean', 'installDist'])
