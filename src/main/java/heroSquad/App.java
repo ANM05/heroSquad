@@ -35,14 +35,14 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "templates/heroform.vtl");
             return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
-        get("/heroes",(request,response)->{
+        }, new VelocityTemplateEngine());*/
+        get("/herosquad",(request,response)->{
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("heroes", Hero.getAll());
-            model.put("template", "templates/heroList.vtl");
+            model.put("template", "templates/herosquad.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-        post("/heroes", (request, response) ->{
+       /* post("/heroes", (request, response) ->{
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("name");
             int age = Integer.parseInt(request.queryParams("age"));  //Original hero add route
