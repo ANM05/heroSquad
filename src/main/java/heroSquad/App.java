@@ -36,7 +36,7 @@ public class App {
             model.put("template", "templates/heroform.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());*/
-        get("/herosquad",(request,response)->{
+        get("/hero-squad",(request,response)->{
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("heroes", Hero.getAll());
             model.put("template", "templates/herosquad.vtl");
@@ -53,6 +53,7 @@ public class App {
             model.put("template", "templates/success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());*/
+
         //Squad routes
         get("/squad/new",(request, response) ->{
             Map<String, Object> model = new HashMap<String, Object>();
@@ -91,7 +92,7 @@ public class App {
             model.put("template", "templates/squad-hero-form.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-        post("/herosquad", (request, response) -> {
+        post("/hero-squad", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             Squad squad = Squad.find(Integer.parseInt(request.params("squadId")));
             String name = request.queryParams("name");

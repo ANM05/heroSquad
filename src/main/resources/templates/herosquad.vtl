@@ -1,10 +1,10 @@
 <h1>Heroes and Squads</h1>
-<ul>
+<ul class="list-group">
     #foreach ($hero in $squad.getHeroes())
-    <li>Hero Name: <button class="btn">$hero.getHeroName()</button></li>
-    <li>Special Powers: <button class="btn">$hero.getSpecialPower()</button></li>
-    <li>Hero age: <button class="btn">$hero.getHeroAge()</button></li>
-    <li>Hero Weakness: <button class="btn">$hero.getWeakness()</button></li>
+    <li class="list-group-item list-group-item-action list-group-item-light">Hero Name: <button class="btn">$hero.getHeroName()</button></li>
+    <li class="list-group-item list-group-item-action list-group-item-light">Special Powers: <button class="btn">$hero.getSpecialPower()</button></li>
+    <li class="list-group-item list-group-item-action list-group-item-light">Hero age: <button class="btn">$hero.getHeroAge()</button></li>
+    <li class="list-group-item list-group-item-action list-group-item-light">Hero Weakness: <button class="btn">$hero.getWeakness()</button></li>
     <hr>
     #end
 </ul>
